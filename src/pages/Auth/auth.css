@@ -1,0 +1,24 @@
+.centering {
+    display: flex;
+    align-items: center;
+    height: 50vh;
+    justify-content: center;
+  }
+
+
+.form__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+.auth__form .field__input {
+    margin-bottom: 1rem;
+}
+.auth-form__hint {
+    margin-top: 1rem;
+}
+.auth-form__hint-text {
+    color: #595959;
+    font-size: 12px;
+}

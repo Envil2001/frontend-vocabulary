@@ -1,0 +1,76 @@
+.word {
+    background: #fff;
+    padding: 16px;
+    border-radius: 8px;
+}
+.word + .word {
+    margin-top: 15px;
+}
+.word__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.word__header_item {
+    display: flex;
+}
+.word__header_item .word__title {
+    font-weight: 700;
+}
+.word__header_item .word__translate {
+
+}
+.word__border {
+    width: 3px;
+    background-color: #ffbbc9;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+.word__title.skeleton {
+    min-height: 15px;
+    border-radius: 6px;
+    width: 60%;
+}
+.word__translate {
+    margin-top: 5px;
+}
+.word__translate.skeleton {
+    min-height: 15px;
+    border-radius: 6px;
+    width: 30%;
+}
+.word__btns {
+    gap: 10px;
+    display: flex;
+}
+.word__btn{
+    display: flex;
+    border-radius: 8px;
+    padding: 5px;
+    cursor: pointer;
+}
+.word__btn:hover {
+    background: #b7d4ff;
+    color: #3766a9;
+}
+
+.word__details {
+    max-height: 0;
+    overflow-y: auto;
+    transition:  max-height 500ms linear;
+    will-change: opacity, max-height;
+}
+.word__details_content {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.word__details.show {
+    max-height: 9em;
+    transition: all 500ms linear;
+    will-change: opacity, max-height;
+}
+
+.word__details data {
+    font-size: 10px;
+    opacity: 0.5;
+}

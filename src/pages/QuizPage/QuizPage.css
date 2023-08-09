@@ -1,0 +1,171 @@
+/* Стили для основного контейнера */
+.quiz-container {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+  grid-template-columns: repeat(7, 1fr); /* Измените количество столбцов по своему усмотрению */
+}
+
+/* Стили для блока результатов */
+.results-box {
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  grid-column: span 7;
+  padding: 20px;
+}
+
+/* Стили для блока вопросов */
+.question-box {
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  background-color: #f7fafc;
+  color: #2d3748;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  grid-column: span 7;
+  padding: 1rem;
+}
+
+/* Стили для блока с результатами */
+.results-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 8px;
+}
+
+/* Стили для блока с заголовком */
+.results-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Стили для SVG иконки */
+.results-icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+/* Стили для блока с результатом "Nice try!" */
+.nice-try-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nice-try-box__info {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+/* Стили для текста "Nice try!" */
+
+
+/* Стили для текста с процентами */
+.accuracy-text {
+  font-size: .875rem;
+  line-height: 1.25rem;
+  text-align: center;
+  opacity: .5;
+}
+
+/* Стили для блока с абзацем */
+.accuracy-paragraph {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+/* Остальные стили и классы можно добавить аналогичным образом */
+
+/* Стили для заголовка h3 */
+.question-heading {
+  font-weight: 600;
+  line-height: 1; 
+  margin-right: 20px;
+  text-align: center;
+}
+
+
+.fraction-part-small {
+  color: #6B7280; /* text-slate-400 */
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+  line-height: 1.5rem;
+}
+
+
+
+
+.question-title {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.options {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.options .option {
+  margin-bottom: 16px;
+}
+/* Стили для кнопки */
+.option {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s, background-color 0.2s;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  padding: 8px 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+.option.selected-answer {
+  background-color: #007BFF;
+  color: #fff;
+}
+.option.selected-answer .option-item__index {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+/* .option:hover {
+  background-color: rgba(0, 123, 255, 0.9);
+} */
+
+.option:focus-visible {
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+
+.option:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.option div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.option .option-item__index {
+  padding: 12px;
+  margin-right: 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}

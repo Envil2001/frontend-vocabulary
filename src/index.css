@@ -1,13 +1,148 @@
-body {
+/* Обнуление значений для отображения и позиционирования */
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cite,
+code,
+del,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  padding: 0;
+  border: 0;
+}
+
+/* Улучшенная семантика для HTML5 */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Определение стандартных свойств для ссылок */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Предотвращение распространения стилей списка в Internet Explorer 8 и ниже */
+
+ol,
+ul {
+  list-style: none;
+}
+
+/* Предотвращение распространения курсивного начертания в элементах <cite> и <em> в Safari */
+
+cite,
+em {
+  font-style: normal;
+}
+
+/* Предотвращение «выбора» текста в IE9 и более поздних версиях, Opera, Chrome, Safari */
+
+body {
+  background-color: #f2f2f2;
+  font-family: 'Inter', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter.ttf') format('truetype');
+}
+
+.notFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  font-size: 15px;
+  margin-top: 5px;
+  font-weight: 800;
+}
+
+.notFound .icon {
+  font-size: 50px;
+}
+
+
+.translate-yellow {
+  color: yellow;
 }

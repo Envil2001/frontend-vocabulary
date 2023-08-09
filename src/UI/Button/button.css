@@ -1,0 +1,57 @@
+
+
+.button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    outline: 0;
+    margin: 0;
+    padding: 0px 16px 0px 0px;
+    border: 0;
+    box-shadow: inset 0 -1px 0 0 rgb(0 0 0 / 6%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+}
+.button.skeleton {
+    min-height: 40px;
+    border-radius: 8px;
+}
+.button span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 16px;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.button .button__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-left: 16px;
+}
+.button:disabled {
+    background-color: #f1f1f1;
+    color: #afafaf;
+    cursor: no-drop;
+    opacity: 0.7;
+}
+.button:active {
+    box-shadow: inset 0 -1px 0 0 rgb(0 0 0 / 6%), 0 0 2px 0 rgb(0 0 0 / 4%);
+    transform: translateY(1px);
+}
+.button:hover:not(:disabled) {
+    box-shadow: inset 0 -1px 0 0 rgb(0 0 0 / 6%), 0 2px 4px 0 rgb(0 0 0 / 8%);
+}

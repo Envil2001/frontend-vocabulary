@@ -1,0 +1,8 @@
+export { Home } from "./Home/home"
+export { Login } from "./Auth/Login/Login"
+export { Registration } from "./Auth/Registration/Registration"
+export { FolderPage } from "./FolderPage/FolderPage"
+export { Profile } from "./Profile/Profile"
+export { ActivateUser } from "./ActivateUser/ActivateUser"
+export { TestPage } from "./TestPage/TestPage"
+export { Quiz } from "./QuizPage/QuizPage"

@@ -1,0 +1,98 @@
+.profile__wrapper {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    border-radius: 8px;
+    padding: 24px 20px;
+    font-size: 16px;
+    line-height: 1.5em;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+
+.bg__profile {
+    height: 280px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-top: calc(24px * -1);
+    margin-left: calc(20px * -1);
+    margin-right: calc(20px * -1);
+    position: relative;
+    grid-column-start: span 2;
+    transition: 0.3s ease-in;
+}
+.bg__profile.skeleton {
+    min-height: 280px;
+}
+.bg__profile--hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.197);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in;
+}
+.bg__profile:hover .bg__profile--hover {
+    transition: 0.3s ease-in;
+    visibility: visible;
+    opacity: 1;
+}
+.profile__avatar {
+    margin-top: -88px;
+    width: 112px;
+    height: 112px;
+    border-radius: 6px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    box-shadow: 0 0 0 4px #fff, inset 0 0 0 1px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    grid-column-start: span 2;
+}
+.profile__avatar.skeleton {
+    min-height: 112px;
+    min-width: 112px;
+    border-radius: 6px;
+}
+.profile__fullname {
+    margin-top: 8px;
+    margin-right: 20px;
+    grid-column: 1;
+    font-size: 36px;
+    line-height: 1.46em;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.profile__fullname.skeleton {
+    min-height: 36px;
+    border-radius: 6px;
+    max-width: 40%;
+}
+.profile__description {
+    margin-top: 4px;
+    grid-column-start: span 2;
+}
+.profile__description.skeleton {
+    min-height: 15px;
+    border-radius: 6px;
+    max-width: 60%;
+}
+.profile__subscribe__wrapper {
+    margin-top: -4px;
+    grid-row: 3;
+    grid-column: 2;
+    display: flex;
+    gap: 20px;
+}

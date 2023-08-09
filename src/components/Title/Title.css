@@ -1,0 +1,10 @@
+.title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.title.skeleton {
+    min-height: 15px;
+    border-radius: 6px;
+    width: 30%;
+}

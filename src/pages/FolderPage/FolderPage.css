@@ -1,0 +1,22 @@
+.folder-page {
+    display: flex;
+    gap: 20px;
+}
+
+.folder-page__left {
+    width: 500px;
+    flex-shrink: 0;
+}
+
+.folder-page__words-list {
+    margin-top: 20px;
+}
+
+.folder-page__right {
+    flex-grow: 1;
+}
+
+.content-title__profile {
+    display: flex;
+    gap: 20px;
+}

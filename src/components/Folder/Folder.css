@@ -1,0 +1,97 @@
+.folder--content {
+
+}
+
+.folder--wrapper {
+    display: grid;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 50px;
+}
+
+.folder {
+    border-radius: 8px;
+    background: #fff;
+    padding: 20px;
+    height: 70px;
+    border: 1px solid rgba(0,0,0,0.03);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.folder:hover {
+    border-color: #ffbbc9;
+    box-shadow: 0 0 0 3px rgb(229 92 120 / 12%);
+}
+.folder .folder__title.skeleton  {
+    min-height: 15px;
+    border-radius: 6px;
+    width: 60%;
+}
+.folder .folder__title {
+    font-size: 15px;
+    margin-bottom: 5px;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #000;
+    font-weight: 700;
+}
+.folder .folder__subtitle.skeleton {
+    min-height: 13px;
+    width: 30%;
+    border-radius: 6px;
+}
+.folder .folder__subtitle {
+    font-size: 13px;
+    opacity: .5;
+    color: #000;
+}
+.folder .folder__title:hover {
+    color: rgb(255, 91, 99);
+}
+.folder__views {
+    display: flex;
+    align-items: self-end;
+    flex: 1;
+    opacity: .5;
+    font-size: 13px;
+    justify-content: space-between;
+}
+.folder__views___details {
+    display: flex;
+    align-items: center;
+}
+.folder__views___details.skeleton {
+    min-height: 10px;
+    width: 20%;
+    border-radius: 6px;
+}
+.folder__views span {
+    margin-left: 5px;
+}
+
+.folder:hover .folder--icon__wrapper {
+    display: flex;
+    align-items: center;
+}
+.folder--icon__wrapper {
+    display: none;
+    gap: 10px;
+}
+.skeleton {
+	background-color: #dedede;
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+	background-size: 40px 100%; 
+	background-repeat: no-repeat; 
+	background-position: left -40px top 0; 
+	animation: shine 1s ease infinite; 
+}
+
+@keyframes shine {
+	to {
+		background-position: right -40px top 0;
+	}
+}
